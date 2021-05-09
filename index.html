@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="background-anim" id="background"></div>
+    <div class="background" >
+      <div class="block animate__animated animate__slow" id="first_block">
+        <div class="block__text">
+          <h1 class="block__text-title"> Приветствие </h1>
+          <p class="block__text-text"><span id="text"></span><span id="cursor">|</span></p>
+        </div>
+        <div class="block__form">
+          <input class="block__form-input animate__animated animate__bounceInLeft animate__slower hidden" type="text"
+            placeholder="Введите ваше имя" id="inputSend">
+          <span class="error-container" id="error"><span class="error animate__animated"></span></span>
+          <button class="block__form-btn animate__animated animate__bounceInRight animate__slower hidden"
+            id="btnSend">Подтвердить</button>
+        </div>
+      </div>
+      <div class="block animate__animated animate__slow hidden" id="second_block">
+        <div class="block__text">
+          <h1 class="block__text-title">Мои работы</h1>
+          <p class="block__text-text" id="text_two"></p>
+        </div>
+        <div class="block__form">
+          <div class="block__works">
+            <a class="work" href="https://gremliiin.github.io/Nasa" target="_blank">
+              <div class="work__discription" >
+                <span class="work__discription-item nasa hover-link">Приложение NASA</span>
+              </div>
+            </a>
+            <a class="work" href="https://gremliiin.github.io/tasktwo" target="_blank">
+              <div class="work__discription">
+                <span class="work__discription-item todo hover-link">Приложение Todo List</span>
+              </div>
+            </a>
+            <a class="work" href="https://gremliiin.github.io/Ask" target="_blank">
+              <div class="work__discription">
+                <span class="work_discription-item ask hover-link">Сайт продажи квартир</span>
+              </div>
+            </a>
+            <a class="work" href="https://github.com/gremliiin" target="_blank">
+              <div class="work__discription">
+                <span class="work__discription-item github hover-link">Мой GitHub</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
